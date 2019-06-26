@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "fmarco",
+    "password": "fmarco1878",
+    "database": "desarrollo01",
+    "host": "pgsql02.dinaserver.com",
+    "dialect": "postgres"
+  },
+  "test": {
+     "username": "fmarco",
+    "password": "fmarco1878",
+    "database": "desarrollo01_test",
+    "host": "pgsql02.dinaserver.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "fmarco",
+    "password": "fmarco1878",
+    "database": "prod_desarrollo01",
+    "host": "pgsql02.dinaserver.com",
+    "dialect": "postgres"
+  }
+}
