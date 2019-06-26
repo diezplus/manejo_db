@@ -1,1 +1,1 @@
-# manejo_db_sequelize
+# manejo_db
