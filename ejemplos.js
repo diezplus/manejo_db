@@ -3,8 +3,8 @@
 const Sequelize = require('sequelize');
 
 // Option 1: Passing parameters separately
-const sequelize = new Sequelize('desarrollo01', 'fmarco', 'fmarco1878', {
-    host: 'pgsql02.dinaserver.com',
+const sequelize = new Sequelize('desarrollo01', 'fmarco', '', {
+    host: 'pgsql.server.com',
     dialect: 'postgres',
     /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
     pool: {
@@ -27,36 +27,7 @@ sequelize
         console.error('Unable to connect to the database:', err);
     });
 
-/* Crea tabla 'user'
-const Model = Sequelize.Model;
-class User extends Model {}
-User.init({
-    // attributes
-    firstName: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        set(val) {
-            this.setDataValue('firstName', val.toUpperCase());
-        }
-    },
-    lastName: {
-        type: Sequelize.STRING,
-        set(val) {
-            this.setDataValue('lastName', val.toUpperCase());
-        }
-    },
-    saldo: {
-        type: Sequelize.DECIMAL(10, 2)
-    },
-    uuid: {
-        type: Sequelize.UUIDV1
-    },
-    descripcion: Sequelize.TEXT
-}, {
-    sequelize,
-    modelName: 'user'
-    // options
-}); */
+
 
 const Model = Sequelize.Model;
 class User extends Model {}
